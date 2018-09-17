@@ -31,6 +31,10 @@ class Welcome extends MY_Controller {
 		$this->load->view('welcome_message');
 	}
 
+	public function test(){
+		echo "Hello";
+	}
+
 
 
 
