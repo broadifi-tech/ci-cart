@@ -98,6 +98,30 @@
           
           
         </li>
+
+
+
+        <li class="treeview active">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>Stocks</span>
+            <span class="pull-right-container">
+
+              <i class="fa fa-angle-left pull-right"></i>
+
+            </span>
+
+            <ul class="treeview-menu">
+            <li><a href="<?php echo base_url();?>products/stocks/index"><i class="fa fa-circle-o"></i> All Stocks</a></li>
+            <li><a href="<?php echo base_url();?>products/stocks/add"><i class="fa fa-circle-o"></i> Add New</a></li>
+           </ul>
+
+          </a>
+
+          
+          
+        </li>
+
+
         
         
       </ul>

@@ -61,6 +61,17 @@ class Product extends CI_Model {
         return $query->result();
     }
 
+    /* fetch all product names*/ 
+
+    public function get_product_names()
+    {   
+        
+        $this->db->select('name,id');
+        $this->db->from($this->table);      
+        $query = $this->db->get();
+        return $query->result();
+    }
+
 
     /**
      * @param $id
