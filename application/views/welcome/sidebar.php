@@ -38,7 +38,7 @@
         
         <li class="treeview active">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Products</span>
+            <i class="fa fa-product-hunt"></i> <span>Products</span>
             <span class="pull-right-container">
 
               <i class="fa fa-angle-left pull-right"></i>
@@ -61,7 +61,7 @@
         
         <li class="treeview active">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Tags</span>
+            <i class="fa fa-tags"></i> <span>Tags</span>
             <span class="pull-right-container">
 
               <i class="fa fa-angle-left pull-right"></i>
@@ -81,7 +81,7 @@
 
         <li class="treeview active">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Categories</span>
+            <i class="fa fa-bars"></i> <span>Categories</span>
             <span class="pull-right-container">
 
               <i class="fa fa-angle-left pull-right"></i>
@@ -103,7 +103,7 @@
 
         <li class="treeview active">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Stocks</span>
+            <i class="fa fa-industry"></i> <span>Stocks</span>
             <span class="pull-right-container">
 
               <i class="fa fa-angle-left pull-right"></i>

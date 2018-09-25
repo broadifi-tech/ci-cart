@@ -100,7 +100,7 @@ class Stocks extends MY_Controller {
 
 
     function delete($id=0){
-        $data['stock'] = $this->stock->get_tag($id);
+        $data['stock'] = $this->stock->get_stock($id);
 
         // check if the stock exists before trying to delete it
         if(isset($data['stock']->id)) {
