@@ -73,6 +73,29 @@
                         </div>
                     </div>
 
+
+                    <div class="col-md-6">
+                        <label for="category_id" class="control-label"><span class="text-danger">*</span>Choose Brand</label>
+                        <div class="form-group">
+                            <select class="form-control select2" style="width: 100%;" name="brand_id">
+                                <?php 
+                                    $brand=$product->brand_id;
+								
+                                    foreach ($brand_names as  $brand_name) {
+                                        if($brand==$brand_name->id){
+                                            echo '<option value="'.$brand_name->id.'" selected>'.$brand_name->brand_name.'</option>';  
+                                        }else{
+                                            echo '<option value="'.$brand_name->id.'">'.$brand_name->brand_name.'</option>';
+                                        }
+                                    } 
+                                ?>
+                            </select>
+                            <span class="text-danger"><?php echo form_error('brand_id');?></span>
+                        </div>
+                    </div>
+
+
+
                      <div class="col-md-6">
                         <label for="tags" class="control-label"><span class="text-danger"></span>Tags</label>
                         <div class="form-group">

@@ -56,6 +56,23 @@ class Brand extends CI_Model {
         $this->db->insert($this->table,$params);
     }
 
+
+    /*
+     
+     * Get All Brands Name
+     */
+
+    public function get_brand_names()
+    {   
+        
+        $this->db->select('*');
+        $this->db->from('brands');
+        //$this->db->where('status', 1);
+        $query = $this->db->get();
+        return $query->result();
+    }
+
+
     /**
      * @param $id
      * @param $params

@@ -19,6 +19,7 @@ class Products extends MY_Controller {
        // error_reporting(E_ALL ^ (E_NOTICE | E_WARNING));
         $this->load->model('product');
         $this->load->model('category');
+        $this->load->model('brand');
         $this->output->section('header','welcome/header');
         $this->output->section('sidebar','welcome/sidebar');
         $this->output->section('footer','welcome/footer');
@@ -55,6 +56,7 @@ class Products extends MY_Controller {
                 'full_description' => $this->input->post('full_description'),
                 'price' => $this->input->post('price'),
                 'category_id' => $this->input->post('category_id'),
+                'brand_id' => $this->input->post('brand_id'),
                 'tags_id' => implode(",", $p_tag),
                 'image' => $data1['image'],
                 'gallery' => $this->input->post('gallery')
@@ -67,6 +69,7 @@ class Products extends MY_Controller {
             //Show Add Page
             $this->output->set_title('New Product');
             $data['category_names'] = $this->category->get_category_names();
+            $data['brand_names'] = $this->brand->get_brand_names();
             $data['p_tags']=$this->product->fetch_p_tags();
             $this->load->view('add',$data);
         }
@@ -123,6 +126,7 @@ class Products extends MY_Controller {
                    'full_description' => $this->input->post('full_description'),
                    'price' => $this->input->post('price'),
                    'category_id' => $this->input->post('category_id'),
+                   'brand_id' => $this->input->post('brand_id'),
                    'tags_id' => implode(",", $p_tag),
                    'image' => $data['image'],
                    'gallery' => $this->input->post('gallery')
@@ -135,6 +139,7 @@ class Products extends MY_Controller {
             {
                 $this->output->set_title('Edit Product');
                 $data['category_names'] = $this->category->get_category_names();
+                $data['brand_names'] = $this->brand->get_brand_names();
                 $this->load->view('edit',$data);
             }
         }

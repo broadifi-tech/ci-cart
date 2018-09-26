@@ -68,6 +68,19 @@
 			            </select>
 			        </div>
 
+                     <div class="col-md-6">
+                    <label for="price" class="control-label"><span class="text-danger"></span> Choose Brand</label>
+			        	<select class="form-control" name="brand_id" id="brand_id">
+			            	<option value="">Select Brand</option>
+								<?php
+								foreach ($brand_names as $brand_name) { ?>
+									<option value="<?php echo $brand_name->id; ?>"> <?php echo $brand_name->brand_name; ?></option>
+								<?php }
+								?>
+			            </select>
+			        </div>
+
+
                     <div class="col-md-6">
                         <label for="tags" class="control-label"><span class="text-danger"></span>Select Tags</label>
                         <div class="form-group">
