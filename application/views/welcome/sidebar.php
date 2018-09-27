@@ -138,6 +138,25 @@
  
         </li>
 
+        <li class="treeview active">
+          <a href="#">
+            <i class="glyphicon glyphicon-scissors"></i> <span>Coupons</span>
+            <span class="pull-right-container">
+
+              <i class="fa fa-angle-left pull-right"></i>
+
+            </span>
+
+            <ul class="treeview-menu">
+            <li><a href="<?php echo base_url();?>products/coupons/index"><i class="fa fa-circle-o"></i> All Coupons</a></li>
+            <li><a href="<?php echo base_url();?>products/coupons/add"><i class="fa fa-circle-o"></i> Add New</a></li>
+           </ul>
+
+          </a>
+ 
+        </li>
+
+
 
         
         
